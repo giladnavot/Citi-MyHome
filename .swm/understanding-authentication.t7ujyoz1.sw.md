@@ -1,15 +1,15 @@
 ---
 title: Understanding Authentication
 ---
-Authentication in the Citi-MyHome project is handled by the `AuthenticationService` interface, which defines the `login` method. This method is implemented in the `AuthenticationSDJpaService` class, where it checks the user's credentials and generates a JWT token if the credentials are valid. The `AuthenticationController` class uses the `AuthenticationService` to handle login requests from users. If the login is successful, it returns a response with the user's ID and JWT token in the headers. If the login fails, an `AuthenticationException` is thrown.
+Authentication in the Citi-MyHome project is handled by the <SwmToken path="/service/src/main/java/com/myhome/services/AuthenticationService.java" pos="6:4:4" line-data="public interface AuthenticationService {">`AuthenticationService`</SwmToken> interface, which defines the <SwmToken path="/service/src/main/java/com/myhome/services/AuthenticationService.java" pos="7:3:3" line-data="  AuthenticationData login(LoginRequest loginRequest);">`login`</SwmToken> method. This method is implemented in the <SwmToken path="/service/src/main/java/com/myhome/services/springdatajpa/AuthenticationSDJpaService.java" pos="20:4:4" line-data="public class AuthenticationSDJpaService implements AuthenticationService {">`AuthenticationSDJpaService`</SwmToken> class, where it checks the user's credentials and generates a JWT token if the credentials are valid. The <SwmToken path="/service/src/main/java/com/myhome/controllers/AuthenticationController.java" pos="15:4:4" line-data="public class AuthenticationController implements AuthenticationApi {">`AuthenticationController`</SwmToken>`icationService` to handle login requests from users. If the login is successful, it returns a response with the user's ID and JWT token in the headers. If the login fails, an <SwmToken path="/service/src/main/java/com/myhome/controllers/exceptions/AuthenticationException.java" pos="9:4:4" line-data="public class AuthenticationException extends RuntimeException {">`AuthenticationException`</SwmToken> is thrown.
 
 <SwmSnippet path="/service/src/main/java/com/myhome/services/AuthenticationService.java" line="6">
 
 ---
 
-# AuthenticationService Interface
+# <SwmToken path="/service/src/main/java/com/myhome/services/AuthenticationService.java" pos="6:4:4" line-data="public interface AuthenticationService {">`AuthenticationService`</SwmToken> Interface
 
-The AuthenticationService interface defines the contract for the authentication service. It declares a login method that takes a LoginRequest object and returns an AuthenticationData object.
+The <SwmToken path="/service/src/main/java/com/myhome/controllers/AuthenticationController.java" pos="17:5:5" line-data="  private final AuthenticationService authenticationService;">`AuthenticationService`</SwmToken> interface defines the contract for the authentication service. It declares a login method that takes a LoginRequest object and returns an <SwmToken path="/service/src/main/java/com/myhome/services/AuthenticationService.java" pos="7:1:1" line-data="  AuthenticationData login(LoginRequest loginRequest);">`AuthenticationData`</SwmToken> object.
 
 ```java
 public interface AuthenticationService {
@@ -25,9 +25,9 @@ public interface AuthenticationService {
 
 ---
 
-# AuthenticationSDJpaService Class
+# <SwmToken path="/service/src/main/java/com/myhome/services/springdatajpa/AuthenticationSDJpaService.java" pos="20:4:4" line-data="public class AuthenticationSDJpaService implements AuthenticationService {">`AuthenticationSDJpaService`</SwmToken> Class
 
-The AuthenticationSDJpaService class implements the AuthenticationService interface. It provides the actual implementation of the login method. This method authenticates the user and returns an AuthenticationData object containing the user's authentication data.
+The <SwmToken path="/service/src/main/java/com/myhome/services/springdatajpa/AuthenticationSDJpaService.java" pos="20:4:4" line-data="public class AuthenticationSDJpaService implements AuthenticationService {">`AuthenticationSDJpaService`</SwmToken> class implements the <SwmToken path="/service/src/main/java/com/myhome/controllers/AuthenticationController.java" pos="17:5:5" line-data="  private final AuthenticationService authenticationService;">`AuthenticationService`</SwmToken> interface. It provides the actual implementation of the login method. This method authenticates the user and returns an <SwmToken path="/service/src/main/java/com/myhome/services/AuthenticationService.java" pos="7:1:1" line-data="  AuthenticationData login(LoginRequest loginRequest);">`AuthenticationData`</SwmToken> object containing the user's authentication data.
 
 ```java
 @Service
@@ -61,7 +61,7 @@ public class AuthenticationSDJpaService implements AuthenticationService {
 
 ---
 
-# AuthenticationController Class
+# <SwmToken path="/service/src/main/java/com/myhome/controllers/AuthenticationController.java" pos="15:4:4" line-data="public class AuthenticationController implements AuthenticationApi {">`AuthenticationController`</SwmToken> Class
 
 The AuthenticationController class uses the AuthenticationService to authenticate the user. It calls the login method of the AuthenticationService and generates a response with the user's authentication data.
 
@@ -96,4 +96,4 @@ public class AuthenticationController implements AuthenticationApi {
 
 *This is an auto-generated document by Swimm AI 🌊 and has not yet been verified by a human*
 
-<SwmMeta version="3.0.0" repo-id="Z2l0aHViJTNBJTNBQ2l0aS1NeUhvbWUlM0ElM0FnaWxhZG5hdm90" repo-name="Citi-MyHome" doc-type="overview"><sup>Powered by [Swimm](/)</sup></SwmMeta>
+<SwmMeta version="3.0.0" repo-id="Z2l0aHViJTNBJTNBQ2l0aS1NeUhvbWUlM0ElM0FnaWxhZG5hdm90" repo-name="Citi-MyHome"><sup>Powered by [Swimm](https://app.swimm.io/)</sup></SwmMeta>

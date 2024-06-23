@@ -1,11 +1,11 @@
 ---
 title: AuthenticationException Overview
 ---
-This document will cover the `AuthenticationException` class. We'll cover:
+This document will cover the <SwmToken path="/service/src/main/java/com/myhome/controllers/exceptions/AuthenticationException.java" pos="11:3:3" line-data="  public AuthenticationException() {">`AuthenticationException`</SwmToken> class. We'll cover:
 
-1. What is `AuthenticationException`
-2. Variables and functions in `AuthenticationException`
-3. Usage example of `AuthenticationException`
+1. What is <SwmToken path="/service/src/main/java/com/myhome/controllers/exceptions/AuthenticationException.java" pos="11:3:3" line-data="  public AuthenticationException() {">`AuthenticationException`</SwmToken>
+2. Variables and functions in <SwmToken path="/service/src/main/java/com/myhome/controllers/exceptions/AuthenticationException.java" pos="11:3:3" line-data="  public AuthenticationException() {">`AuthenticationException`</SwmToken>
+3. Usage example of <SwmToken path="/service/src/main/java/com/myhome/controllers/exceptions/AuthenticationException.java" pos="11:3:3" line-data="  public AuthenticationException() {">`AuthenticationException`</SwmToken>
 
 ```mermaid
 graph TD;
@@ -16,7 +16,7 @@ AuthenticationException --> UserNotFoundException
  classDef currentBaseStyle color:#000000,fill:#7CB9F4
 ```
 
-# What is AuthenticationException
+# What is <SwmToken path="/service/src/main/java/com/myhome/controllers/exceptions/AuthenticationException.java" pos="9:4:4" line-data="public class AuthenticationException extends RuntimeException {">`AuthenticationException`</SwmToken>
 
 `AuthenticationException` is a custom exception class in the Citi-MyHome project. It extends `RuntimeException` and is thrown when there are authentication errors, such as incorrect credentials or non-existent users.
 
@@ -73,4 +73,4 @@ public class UserNotFoundException extends AuthenticationException {
 
 *This is an auto-generated document by Swimm AI 🌊 and has not yet been verified by a human*
 
-<SwmMeta version="3.0.0" repo-id="Z2l0aHViJTNBJTNBQ2l0aS1NeUhvbWUlM0ElM0FnaWxhZG5hdm90" repo-name="Citi-MyHome" doc-type="class"><sup>Powered by [Swimm](/)</sup></SwmMeta>
+<SwmMeta version="3.0.0" repo-id="Z2l0aHViJTNBJTNBQ2l0aS1NeUhvbWUlM0ElM0FnaWxhZG5hdm90" repo-name="Citi-MyHome"><sup>Powered by [Swimm](https://app.swimm.io/)</sup></SwmMeta>

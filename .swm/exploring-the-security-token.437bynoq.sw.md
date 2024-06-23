@@ -38,7 +38,7 @@ public interface SecurityTokenService {
 
 ---
 
-# SecurityTokenSDJpaService
+# <SwmToken path="/service/src/main/java/com/myhome/services/springdatajpa/SecurityTokenSDJpaService.java" pos="18:4:4" line-data="public class SecurityTokenSDJpaService implements SecurityTokenService {">`SecurityTokenSDJpaService`</SwmToken>
 
 The SecurityTokenSDJpaService class implements the SecurityTokenService interface. It provides the actual implementation of the methods declared in the interface. It uses the `SecurityTokenRepository` to save and retrieve the tokens.
 
@@ -202,4 +202,4 @@ The `useToken` function is a public method that marks a token as used and saves 
 
 *This is an auto-generated document by Swimm AI 🌊 and has not yet been verified by a human*
 
-<SwmMeta version="3.0.0" repo-id="Z2l0aHViJTNBJTNBQ2l0aS1NeUhvbWUlM0ElM0FnaWxhZG5hdm90" repo-name="Citi-MyHome" doc-type="overview"><sup>Powered by [Swimm](/)</sup></SwmMeta>
+<SwmMeta version="3.0.0" repo-id="Z2l0aHViJTNBJTNBQ2l0aS1NeUhvbWUlM0ElM0FnaWxhZG5hdm90" repo-name="Citi-MyHome"><sup>Powered by [Swimm](https://app.swimm.io/)</sup></SwmMeta>
